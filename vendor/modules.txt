@@ -1,4 +1,4 @@
-# github.com/bmc-toolbox/bmclib v0.3.7
+# github.com/bmc-toolbox/bmclib v0.4.1
 ## explicit
 github.com/bmc-toolbox/bmclib/cfgresources
 github.com/bmc-toolbox/bmclib/devices
@@ -26,10 +26,10 @@ github.com/bmc-toolbox/bmclogin
 # github.com/bmc-toolbox/gin-go-metrics v0.0.0-20190425145145-130c9ad985ff
 ## explicit
 github.com/bmc-toolbox/gin-go-metrics
+# github.com/bombsimon/logrusr v0.0.0-20200131103305-03a291ce59b4
+github.com/bombsimon/logrusr
 # github.com/cyberdelia/go-metrics-graphite v0.0.0-20161219230853-39f87cc3b432
 github.com/cyberdelia/go-metrics-graphite
-# github.com/davecgh/go-spew v1.1.1
-## explicit
 # github.com/fatih/structs v1.1.0
 github.com/fatih/structs
 # github.com/fsnotify/fsnotify v1.4.7
@@ -40,6 +40,8 @@ github.com/gammazero/deque
 # github.com/gammazero/workerpool v0.0.0-20181230203049-86a96b5d5d92
 ## explicit
 github.com/gammazero/workerpool
+# github.com/go-logr/logr v0.2.1
+github.com/go-logr/logr
 # github.com/go-playground/locales v0.12.1
 github.com/go-playground/locales
 github.com/go-playground/locales/currency
@@ -121,7 +123,7 @@ github.com/hashicorp/vault/sdk/helper/strutil
 github.com/inconshreveable/mousetrap
 # github.com/joho/godotenv v1.3.0
 github.com/joho/godotenv
-# github.com/konsorten/go-windows-terminal-sequences v1.0.1
+# github.com/konsorten/go-windows-terminal-sequences v1.0.3
 github.com/konsorten/go-windows-terminal-sequences
 # github.com/leodido/go-urn v1.1.0
 github.com/leodido/go-urn
@@ -155,7 +157,7 @@ github.com/ryanuber/go-glob
 github.com/serenize/snaker
 # github.com/sergi/go-diff v1.0.0
 github.com/sergi/go-diff/diffmatchpatch
-# github.com/sirupsen/logrus v1.4.1
+# github.com/sirupsen/logrus v1.6.0
 ## explicit
 github.com/sirupsen/logrus
 github.com/sirupsen/logrus/hooks/syslog
@@ -196,8 +198,9 @@ golang.org/x/net/http2
 golang.org/x/net/http2/hpack
 golang.org/x/net/idna
 golang.org/x/net/publicsuffix
-# golang.org/x/sys v0.0.0-20190403152447-81d4e9dc473e
+# golang.org/x/sys v0.0.0-20200615200032-f1bc736245b1
 golang.org/x/sys/cpu
+golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
 # golang.org/x/text v0.3.2
 golang.org/x/text/secure/bidirule
@@ -213,6 +216,6 @@ gopkg.in/square/go-jose.v2
 gopkg.in/square/go-jose.v2/cipher
 gopkg.in/square/go-jose.v2/json
 gopkg.in/square/go-jose.v2/jwt
-# gopkg.in/yaml.v2 v2.2.2
+# gopkg.in/yaml.v2 v2.2.8
 ## explicit
 gopkg.in/yaml.v2

@@ -2,11 +2,9 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// +build aix,ppc64
+// +build aix
 
 package cpu
-
-import "golang.org/x/sys/unix"
 
 const cacheLineSize = 128
 
@@ -18,7 +16,7 @@ const (
 )
 
 func init() {
-	impl := unix.Getsystemcfg(_SC_IMPL)
+	impl := getsystemcfg(_SC_IMPL)
 	if impl&_IMPL_POWER8 != 0 {
 		PPC64.IsPOWER8 = true
 	}
@@ -27,4 +25,10 @@ func init() {
 	}
 
 	Initialized = true
+}
+
+func getsystemcfg(label int) (n uint64) {
+	r0, _ := callgetsystemcfg(label)
+	n = uint64(r0)
+	return
 }
