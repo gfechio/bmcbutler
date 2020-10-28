@@ -32,13 +32,13 @@ func (b *Butler) msgHandler(msg Msg) {
 	metrics.IncrCounter([]string{"butler", "asset_recvd"}, 1)
 
 	//set bmclib logger params
-	bmclibLogger.SetFormatter(&logrus.TextFormatter{})
+	bmclibLogger.DefaultLogger()
 	if log.Level == logrus.TraceLevel {
-		bmclibLogger.SetLevel(logrus.TraceLevel)
+		log.SetLevel(logrus.TraceLevel)
 	}
 
 	if log.Level == logrus.DebugLevel {
-		bmclibLogger.SetLevel(logrus.DebugLevel)
+		log.SetLevel(logrus.DebugLevel)
 	}
 
 	//if asset has no IPAddress, we can't do anything about it
